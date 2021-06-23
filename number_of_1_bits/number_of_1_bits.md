@@ -1,14 +1,14 @@
-# Number of 1 Bits
-
-## References
+# 统计正整数的二进制中 1 的数目
 
 - [LeetCode 0191](https://leetcode.com/problems/number-of-1-bits/)
 
-## Description
+## 描述
 
-Write a function that takes an unsigned integer and returns the number of '1' bits it has (also known as the Hamming weight).
+统计正整数的二进制中 1 的数目。
 
-## Approach 1
+## 方法 1
+
+暴力解法。时间复杂度 O(n) ，n 为二进制的位数。
 
 ```ruby
 count = 0
@@ -19,7 +19,9 @@ end
 count
 ```
 
-## Approach 2
+## 方法 2
+
+我们使用 x & (x - 1) 来不断更新 x，这个方法总是能够去掉 x 最末位的 1 。时间复杂度 O(n) ，n 为二进制中 1 的数目。
 
 ```ruby
 count = 0
@@ -31,3 +33,7 @@ count
 ```
 
 [number_of_1_bits.rb](number_of_1_bits/number_of_1_bits.rb)
+
+## 总结
+
+- 方法 2 效率更高，代码也更简洁
