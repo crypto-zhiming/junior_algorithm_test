@@ -21,3 +21,5 @@
   - [手写优先队列](heap/heap.md)
 - 栈
   - [有效的括号](stack/stack.md)
+- 单调栈
+  - [下一个更大元素](priority_stack/next_greater_element.md)
