@@ -19,3 +19,5 @@
   - [环形链表](linked_list/linked_list.md)
 - 堆
   - [手写优先队列](heap/heap.md)
+- 栈
+  - [有效的括号](stack/stack.md)
